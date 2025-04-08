@@ -1,0 +1,15 @@
+<div class="container">
+    <main>
+      <h2>Create an Account</h2>
+      <form action="/create-account" method="POST">
+        <label>Username:</label>
+        <input type="text" name="username" required pattern="[a-zA-Z0-9]+" title="Letters and numbers only.">
+  
+        <label>Password:</label>
+        <input type="password" name="password" required pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{4,}" title="At least 4 characters, 1 letter, 1 number.">
+  
+        <button type="submit">Register</button>
+      </form>
+    </main>
+  </div>
+  

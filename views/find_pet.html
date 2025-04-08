@@ -1,0 +1,38 @@
+<div class="container">
+  <main>
+    <h2>Find a Dog/Cat</h2>
+    <form id="findPetForm">
+      <label>Choose an animal:</label>
+      <select id="animal">
+        <option value="">Select</option>
+        <option>Dog</option>
+        <option>Cat</option>
+      </select>
+      <span class="error" id="animalError"></span>
+
+      <label>Breed:</label>
+      <input type="text" id="breed" placeholder="Enter breed or 'does not matter'">
+      <span class="error" id="breedError"></span>
+
+      <label>Preferred Age:</label>
+      <select id="age">
+        <option value="">Select</option>
+        <option>Young</option>
+        <option>Adult</option>
+        <option>Senior</option>
+      </select>
+      <span class="error" id="ageError"></span>
+
+      <label>Preferred Gender:</label>
+      <select id="gender">
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <span class="error" id="genderError"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</div>
+<script src="../find_pet.js" defer></script>

@@ -1,0 +1,66 @@
+<div class="container">
+    <main>
+      <h2>Have a Pet to Give Away</h2>
+      <form name="giveawayForm" action="/submit-pet" method="POST" onsubmit="return validateForm()">
+        <label>Choose an animal:</label>
+        <select name="animalType">
+          <option value="">Select Animal</option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+        </select>
+  
+        <label>Breed:</label>
+        <input type="text" name="breed" placeholder="Enter breed or 'Mixed'">
+  
+        <label>Age:</label>
+        <select name="age">
+          <option value="">Select Age</option>
+          <option value="Young">Young</option>
+          <option value="Adult">Adult</option>
+          <option value="Senior">Senior</option>
+        </select>
+  
+        <label>Gender:</label>
+        <select name="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+  
+        <label>Gets along with other dogs:</label>
+        <select name="getAlongDogs">
+          <option value="">Select Option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+  
+        <label>Gets along with other cats:</label>
+        <select name="getAlongCats">
+          <option value="">Select Option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+  
+        <label>Suitable for a family with small children:</label>
+        <select name="suitableForFamily">
+          <option value="">Select Option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+  
+        <label>Comment:</label>
+        <textarea name="comment" placeholder="Describe your pet..."></textarea>
+  
+        <label>Current Owner's Name:</label>
+        <input type="text" name="ownerName" placeholder="Enter first and last name">
+  
+        <label>Current Owner's Email:</label>
+        <input type="email" name="ownerEmail" placeholder="Enter your email">
+  
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </main>
+  </div>
+  <script src="../giveaway_pet.js" defer></script>
+  
